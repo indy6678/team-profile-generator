@@ -1,0 +1,19 @@
+{
+  "name": "team-profile-generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/indy6678/team-profile-generator.git"
+  },
+  "author": "Edward Sanchez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/indy6678/team-profile-generator/issues"
+  },
+  "homepage": "https://github.com/indy6678/team-profile-generator#readme"
+}

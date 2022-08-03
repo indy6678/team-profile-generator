@@ -1,19 +1,23 @@
 const fs = require('fs');
 const inquirer = require('inquirer');
-const managerList = require('./src/manager')
+const managerList = require('./src/manager');
+const engineerList = require('./src/engineer');
 
-const PromptManager = () => {
-    inquirer.prompt(questions)
-    .then(answers => {
-        console.log(answers);
-        return answers}
-    )
+const promptManager = () => {
+    return inquirer.prompt(managerList)
 }
 
-// const PromptEngineer = () => {
-//     inquirer.prompt()
-// }
+const promptEngineer = () => {
+    return inquirer.prompt(engineerList);
+}
 
 // function call to initialize app
 
-PromptManager();
+promptManager()
+    .then(answers => {
+        console.log(answers)
+    })
+    .then(promptEngineer)
+    .then(answers => {
+        console.log(answers);
+    })
