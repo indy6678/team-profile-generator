@@ -6,4 +6,4 @@
 
 ## USage
 
-- Clone the repo [here]
+- Clone the repo [here](https://github.com/indy6678/team-profile-generator)
