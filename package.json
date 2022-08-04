@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/indy6678/team-profile-generator/issues"
   },
-  "homepage": "https://github.com/indy6678/team-profile-generator#readme"
+  "homepage": "https://github.com/indy6678/team-profile-generator#readme",
+  "devDependencies": {
+    "jest": "^28.1.3"
+  }
 }

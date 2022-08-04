@@ -1,8 +1,10 @@
 const fs = require('fs');
 const inquirer = require('inquirer');
-const managerList = require('./src/manager');
-const engineerList = require('./src/engineer');
-const internList = require('./src/intern');
+const employeeList = require('./lib/employee')
+const managerList = require('./lib/manager');
+const engineerList = require('./lib/engineer');
+const internList = require('./lib/intern');
+const writeFile = require('./src/generate-site')
 
 const promptManager = () => {
     return inquirer.prompt(managerList)
@@ -29,4 +31,5 @@ promptManager()
     .then(promptIntern)
     .then(answers => {
         console.log(answers);
+    .then(writeFile());
     })
