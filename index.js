@@ -30,6 +30,6 @@ promptManager()
     })
     .then(promptIntern)
     .then(answers => {
-        console.log(answers);
-    .then(writeFile());
+        console.log(answers)
     })
+    .then(writeFile());
